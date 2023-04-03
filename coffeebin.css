@@ -1,0 +1,490 @@
+@charset "UTF8";
+*{margin:0; padding:0;}
+body{font-weight: 100; overflow-x: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+img{vertical-align: bottom;}
+li a{color: inherit; text-decoration: none;}
+li{list-style: none;}
+
+.center{width:1200px; margin: 0 auto;}
+
+header{
+    position: sticky;
+top: 0; left: 0; right: 0;text-align: center;background-color: white;
+margin: auto;
+}
+
+.top-menu {height: 40px; 
+    background-color: rgb(238, 238, 238);
+    position: relative;}
+    .top-menu ul{ display: flex;
+    justify-content: flex-end;}
+     
+         .top-menu a{font-weight: 100; 
+        font-size: 0.8em;
+        margin-left: 1em; line-height: 40px;
+        letter-spacing: -0.13em;}
+        #mini-logo{
+        text-indent: -9999px;
+        background: 
+        rgb(47, 28, 17)
+        url(https://www.coffeebeankorea.com/images/common/ico_user_info_line.png)
+        no-repeat 50% 50%;
+        display: inline-block;
+        background-size: 25px; width: 50px; height: 40px;   
+    }
+
+.logo{ 
+    background:url(https://www.coffeebeankorea.com/images/common/logo_93_69.png) 
+    no-repeat 0 center; text-indent: -9999px; margin: 7px 0;
+    background-size: 80px 60px; width: 100px; height: 90px;
+    }
+    
+
+.top-menu2{display: inline-flex; height:100px; 
+justify-content: space-between; }
+
+.menu-bar{display: flex; position: relative; 
+left: -300px;}
+    
+.menu-bar > li > a {
+    font-weight: 600;
+    font-size: 0.9em;   
+    line-height: 100px;  margin: auto 15px;}
+
+
+.top-menu2 li:hover .sub{opacity: 1;pointer-events: auto;}
+
+
+.container2{
+    z-index: -1;
+    width: 1200px;  position: relative;
+    height: 500px;
+    overflow: hidden;
+    display: flex; 
+    justify-content: start;
+    margin-top: 30px;
+}
+
+.pick-menu{
+    display: flex;
+    transition: all 0.5s;
+}
+
+.pick-menu>div{
+    display: flex; 
+    align-items: center;
+    text-align: center; 
+    width: 1200px; height: 500px;
+}
+
+
+.slide1 >div, .slide2 >div, .slide3 >div{
+ 
+ width: 300px; height: 450px;
+ 
+} 
+.yeah{
+    display: inline-block;
+    width: 300px; height: 300px;
+    background-size: 300px 300px;
+  
+}
+
+.circle{
+    margin: 30px 0; position: relative; 
+    left: 600px;
+}
+.non-click, .circle{
+    cursor: pointer;
+    width: 10px; height: 10px; border-radius: 50%;
+    background-color: #f38200; border: none;
+}
+
+.img1{
+    background: url(img/0401-1.jpg);
+}
+.img2{
+    background: url(img/0401-2.jpg);
+}
+.img3{
+    background: url(img/0401-3.jpg);
+}
+.img4{
+    background: url(img/0401-4.jpg);
+}
+.img5{
+    background: url(img/0401-5.jpg);
+}
+.img6{
+    background: url(img/0401-6.jpg);
+}
+.img7{
+    background: url(img/0401-1.jpg);
+}
+.img8{
+    background: url(img/0401-8.jpg);
+}
+.img9{
+    background: url(img/0401-3.jpg);
+}
+.img10{
+    background: url(img/0401-4.jpg);
+}
+.img11{
+    background: url(img/0401-6.jpg);
+}
+.img12{
+    background: url(img/0401-2.jpg);
+}
+.buttons{
+    position: relative; left:830px;
+    margin-bottom: 30px; top: -140px;
+}
+
+.pre{
+   top:-300px; left: 311px;
+    width: 40px; height: 40px; 
+    font-size: 35px; 
+    cursor: pointer; color: #f38200;position: relative;
+}
+.next{
+   width: 40px; height: 40px; 
+    top:-342px;left: 1550px;
+    font-size: 35px;
+    cursor: pointer; color: #f38200;position: relative;
+}
+
+.pre2, .next2{
+    font-size: 35px;top:-350px;
+    cursor: pointer; color: #f38200;position: relative;
+}
+
+.pre2{
+left: -60px; 
+}
+.next2{
+ right:-1250px   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-menu{
+    z-index: 1;
+    width: 100vw;
+    background-color:rgb(238, 238, 238) ;
+    position: absolute; display: flex;
+    padding: 20px; left:0; top: 100%;
+    transition: 0.3s;
+     height:0; visibility: hidden; opacity: 0;
+    padding-left: 500px;
+}
+.show{
+    height:385px; visibility: visible; opacity: 1;
+}
+
+
+.sub-menu ul{
+    padding: 20px;
+}
+.sub-menu ul li{
+    padding:10px; 
+}
+
+.sub-menu ul a:hover{
+    text-decoration: underline;
+}
+
+legend{display: none;}
+fieldset span{
+cursor: pointer;
+    color: darkorange;
+text-align: center; line-height: 100px; font-size: 1.5em;
+display: inline-block; height: 100px; }
+
+.search-icon{position: absolute; top:0}
+.search-icon i{position:absolute; top: 80px;
+left: 1600px;}
+.search-icon input{
+    outline: none; font-size: 20px; }
+
+.close-none{visibility: hidden; opacity: 0;}
+.close-show{visibility: visible; opacity: 1;}
+.search-show{visibility: visible; opacity: 1;}
+.search-none{visibility: hidden; opacity: 0;}
+.input-show{visibility: visible; opacity: 1;}
+.input-none{visibility: hidden; opacity: 0;}
+
+
+input{position: absolute; top:140px; left: 330px; height: 50px;
+    width: 1200px; }
+
+
+
+
+
+
+
+
+.main_img{  
+    cursor: pointer;
+    height: 700px; width: 100%; 
+    background: url(https://www.coffeebeankorea.com/data/banner/[%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80]-2023-01-%EC%84%A4%ED%96%A5%EB%94%B8%EA%B8%B0_01.jpg)
+    no-repeat center center}
+.sub-img{
+    cursor: pointer;
+    height: 400px; width: 100%; 
+background: url(https://www.coffeebeankorea.com/data/banner/[%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80]-%EB%A9%94%EC%9D%B8%EB%B0%B0%EB%84%88-2_4.jpg)
+no-repeat center center;}
+
+        .icons{height: 100px; }
+
+
+        .icons li{
+            float: left;
+            margin: 40px 20px; 
+            color: rgb(207,102,26);
+            cursor: pointer;
+        }
+
+        .icons::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .box div:nth-of-type(1) a{
+            display: inline-block;
+            width: 380px; height: 470px;
+        background: url(https://www.coffeebeankorea.com/data/banner/PC_B_364.jpg)
+        no-repeat center;}
+
+        .box div:nth-of-type(2) a{
+            display: inline-block;
+            width: 380px; height: 470px;
+        background: url(https://www.coffeebeankorea.com/data/banner/PC_B_362.jpg)
+        no-repeat center;}
+
+        .box div:nth-of-type(3) a{
+            display: inline-block;
+            width: 380px; height: 470px;
+        background: url(https://www.coffeebeankorea.com/data/banner/PC_B_355.jpg)
+        no-repeat center;
+        margin-right: 0;
+    }
+
+    .mdpick{margin-top:30px}
+    .box>h2, .mdpick{ 
+        font-size: 22px; font-weight: 500;   
+        color: rgb(207,102,26);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+   
+.wrap-slide{
+    width: 1200px; height: 530px;
+    display: flex;
+}
+.wrap-slide>div{
+    display: flex; 
+}
+.wrap-slide>div>div{
+    margin: 0 10px;
+}
+
+
+
+
+ .wrap-slide h2{
+    color: rgb(207,102,26);
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 600;
+    letter-spacing: -0.1em;
+ }
+
+ .last-box{height: 620px; background: rgb(124,81,161);}
+ 
+ .icons2{height: 100px; display: flex;
+    justify-content: center;
+}
+
+
+ .icons2 li{ 
+
+     float: left;
+     margin: 40px 20px; 
+     color: rgb(207,102,26);
+     cursor: pointer;
+ }
+
+ .icons2::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+
+ .last-box  h2{
+    color: white; font-weight: 700; font-size: 20px;
+    padding: 50px; text-align: center;
+}
+.first-wrap, .second-wrap{display: flex;}
+
+.first-wrap div, .second-wrap div{
+    width: 200px; height: 200px;
+}
+
+.first-wrap img{width: 200px; height: 200;}
+
+.second-wrap img{width: 200px; height: 200;}
+.first-wrap div:nth-child(2){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/337170050_994580088384646_4887393137479216443_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=quFryftIR4EAX9-LX3W&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfAslxCeTFT1a42jf4-FvO6wvLH-UbbehDk_8_5XERiGvg&oe=641E96FA)
+    no-repeat center;
+    background-size: 200px;
+}
+.first-wrap div:nth-child(3){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/337388313_232601842644795_59346219256662787_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=q2D2CajVtacAX-DNkmW&_nc_oc=AQmADiCpVRfmS0UxSrZ5xdISFfk9HWtIfh-5W5XlkRkZkgcacWgZaIf7HR2pH3ecW_8&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDirALTe_qQ6ks2-ob9N9OHf8YZLaujlO7TrZRVx0u7bg&oe=641F39E3)
+    no-repeat center;
+    background-size: 200px;
+}
+.first-wrap div:nth-child(4){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/336166664_1255465208718903_6464933575701820241_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=dYoATQeXnPgAX8Q3izT&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCX5pUxdnERAJZQTkh9ybqRzUvOpEf4V1OxSnQw05KUIg&oe=641E32F5)
+    no-repeat center;
+    background-size: 200px;
+}
+.first-wrap div:nth-child(5){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/335757567_8825062900902133_158197974855714950_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=vS5YtbWErSgAX_RpwbL&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBK8hLOg2giifJFQkmAAV96hMlFCqQxFr0EDv8WcbQrYQ&oe=641EE66F)
+    no-repeat center;
+    background-size: 200px;
+}
+.first-wrap div:nth-child(6){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/332841018_916584822867229_1262117537640475820_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=X2_pjtAI31EAX_7kkLz&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfD3qfZG1oTSRyBd8UNITiax8jBI8kin6N7Xw9M1RiEk9A&oe=641F1BDC)
+    no-repeat center;
+    background-size: 200px;
+}
+
+.second-wrap div:nth-child(1){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/336005308_488925106783754_1328933693181465588_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=t4k5DrFyniQAX8n9qgJ&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCuf3b-mCFQyvWAaPvhtNeLNRztOl7n6YuaVTd4EPei4w&oe=641EB62D)
+    no-repeat center;
+    background-size: 200px;
+}
+.second-wrap div:nth-child(2){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/335567615_181635084604852_9101022575096840375_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Kg16UhEsfBkAX9zHVcB&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfB8tyKzhWvld_iE45UxzauNCpieX8gVosFqa1gDVglHug&oe=641DD9F4)
+    no-repeat center;
+    background-size: 200px;
+}
+.second-wrap div:nth-child(3){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/333224310_516914397307300_7939281952768097538_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=GK3cMcX_bbQAX9wL7bZ&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBfHhbAVGPT9JIkqN70xsu7TOfxnzimveW3LkyujxoIYg&oe=641DCD9E)
+    no-repeat center;
+    background-size: 200px;
+}
+.second-wrap div:nth-child(4){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/334544415_928624898475316_2748835391506827089_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=tLNMEMq75SAAX9msrQY&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBlgnf810cn6k9zZ2gQ5qxXL5qj7SCVfG0oan20AYUbnQ&oe=641F10C6)
+    no-repeat center;
+    background-size: 200px;
+}
+.second-wrap div:nth-child(5){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/334559461_564875278738928_8871121863312795891_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=gijVw4Op_LwAX9T4J6J&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCo278RkN89lbD0zCPefQDcNckYtsrhz_ta0761118fNA&oe=641E4C44)
+    no-repeat center;
+    background-size: 200px;
+}
+.second-wrap div:nth-child(6){
+    background: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/334100758_114862224807354_5772418657828345995_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=0avlLyx98d0AX-l_fOK&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfAV3FBRr-FVSx6Aot6Mp_TuVnj6_7vykxKtOsr-awseNA&oe=641E7761)
+    no-repeat center;
+    background-size: 200px;
+}
+
+.btn-wrap{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block; 
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white; background-color: rgb(243,130,0);
+    width: 400px; height: 40px; font-weight: 600; line-height: 40px;
+    margin-top: 20px;  
+}
+footer{background-color:rgb(226,226,226);}
+
+
+.footer_wrap{
+    border-bottom: 1px solid rgb(75,38,22);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer_wrap h2{
+    font-size: 18px; margin: 50px 0 30px 0;
+    font-weight: 700; color: rgb(243,130,0);
+}
+
+.footer_wrap li{font-size: 13px; margin-bottom: 15px; cursor: pointer;}
+
+
+.footer-wrap2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-footer{padding-top: 30px;}
+.last-footer ul{display: flex;}
+.last-footer ul li{margin-right: 5px; font-size: 15px;}
+.last-footer li:nth-child(2){color: rgb(243,130,0);
+font-weight: 500;}
+.last-footer p{padding-top: 30px; font-size: 14px;
+letter-spacing: -0.1px; margin-bottom: 30px;}
+
+.footer-wrap3 li{
+    float: left; 
+}
+.footer-wrap3::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footer-wrap3 li{
+    display: inline-block; text-align: center;
+    width :37px; height: 30px; border: 1px solid;
+    margin-top: 35px;
+    margin-left: 15px;
+    padding-top: 7px;
+    border-radius: 50%;
+    color: white; border: none;
+    background-color: #4a2516;
+}
+
+.back-to-top{
+    width: 70px; border-radius: 50%;
+    cursor: pointer;
+    height: 70px; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 2px; 
+    border: none; font-weight: 600;
+    position: fixed; right:4em; bottom: 5em;
+    visibility: hidden; opacity: 0;
+    transition: 0.5s;
+}
+
+.visible{
+    width: 70px; border-radius: 50%;
+    cursor: pointer;
+    height: 70px; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 2px; 
+    border: none; font-weight: 600;
+    position: fixed; right:4em; bottom: 5em;
+    visibility:visible; opacity: 1;
+}
